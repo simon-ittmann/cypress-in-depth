@@ -1,0 +1,13 @@
+{
+  "name": "cypress-in-depth",
+  "version": "1.0.0",
+  "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:verify": "cypress verify",
+    "cypress:install": "SET CYPRESS_INSTALL_BINARY=cypress-binaries/cypress-windows-x64-4.6.0.zip && npm install"
+  },
+  "devDependencies": {
+    "cypress": "^4.6.0"
+  }
+}
