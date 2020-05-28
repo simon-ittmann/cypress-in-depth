@@ -1,17 +1,15 @@
 /**
- * Plugins
+ * @type {Cypress.PluginConfig}
  */
 module.exports = (on, config) => {
-    /**
-     * Will be executed before each test file!
-     */
-    on('before:browser:launch', (browser = {}, args) => {
+
+    on('before:browser:launch', (browser, launchOptions) => {
         if (browser.name === 'chrome') {
             // ^ make sure this is your browser name, you may
             // be using 'canary' or 'chromium' for example, so change it to match!
-            args.push('--proxy-bypass-list=<-loopback>');
-            return args
+            launchOptions.args.push('--proxy-bypass-list=<-loopback>');
         }
+        return launchOptions
     });
 
     /**

@@ -1,0 +1,20 @@
+{
+  "projectId": "cypress-in-depth",
+  "pageLoadTimeout": 5000,
+  "defaultCommandTimeout": 3000,
+  "video": true,
+  "baseUrl": "https://github.com/",
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "target/test-output-[hash].xml",
+    "toConsole": false
+  },
+  "fixturesFolder": false,
+  "videoCompression": 32,
+  "screenshotsFolder": "target/screenshots",
+  "videosFolder": "target/videos",
+  "supportFile": "src/support/index.ts",
+  "pluginsFile": "src/plugins/index.js",
+  "integrationFolder": "src/integration",
+  "chromeWebSecurity": false
+}

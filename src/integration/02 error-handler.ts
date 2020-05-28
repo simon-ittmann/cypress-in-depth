@@ -1,0 +1,1 @@
+// Try to throw an fe error via a cypress task

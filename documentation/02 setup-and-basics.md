@@ -1,4 +1,10 @@
-# Cypress in depth
+# Setup
+
+## cypress.json
+
++ Videos
++ src Ordner umstellen
++ reporter, Junit, -> Testmanagement Software Tools
 
 ## Firewall Problem mit Cypress binaries
 
@@ -16,3 +22,4 @@ neues npm script anzulegen.
 Man sollte Cypress auf jedenfall in Typescript verwenden. Der Code wird dadurch lesbarer und gerade bei eigen definierten
 Commands ist eine bessere IDE unterstützung möglich!
 
+https://docs.cypress.io/guides/tooling/typescript-support.html#Install-TypeScript
